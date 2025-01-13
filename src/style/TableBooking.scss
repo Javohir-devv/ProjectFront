@@ -1,0 +1,133 @@
+.table-booking-container.dark-theme {
+   
+    gap: 20px;
+    padding: 20px;
+    background-color:black;
+    color: #ffffff;
+    
+  }
+  
+  .restaurant-model {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    width: 70%;
+  }
+  .main-content{
+    display: flex;
+  }
+  .table {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    background-color: #111;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .table.available {
+    border-bottom:5px solid #28a745;
+  }
+  
+  .table.running {
+    border-bottom:5px solid #ffc107;
+  }
+  
+  .table.billed {
+    border-bottom:5px solid #6c757d;
+  }
+  
+  .table.available-soon {
+    border-bottom:5px solid #17a2b8;
+  }
+  
+  .table.selected {
+    background-color:#333;
+
+  }
+  
+  .details-and-filter {
+    flex: 1;
+  }
+  
+  .filter select {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #343a40;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  
+  .table-details {
+    margin-top: 20px;
+    background-color: #2e2e3e;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #444;
+  }
+  .table-booking-header{
+    width: 100%;
+    padding: 30px ;
+    background-color: #111;
+    border-radius: 20px;
+  }
+  .selected-table-info{
+    padding: 20px;
+
+    button{
+        padding: 10px 20px ;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        transition: all .5s;
+
+    }
+    button:hover{
+        background-color: white;
+      
+        color:black;
+    }
+  }
+  .status-filters{
+    display: flex;
+    gap: 20px;
+    button{
+        padding:5px 20px;
+        border-radius: 10px;
+        border: none;
+    }
+    .available{
+        background-color: #28a745 !important;
+        color: white;
+
+    }
+    .running{
+        background-color:#ffc107;
+        color: white;
+    }
+    .billed{
+        background-color: #6c757d;
+        color: white;
+    }
+    .available-soon{
+        background-color: #17a2b8;
+        color: white    ;
+    }
+  }
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Butun oynani qoplaydi */
+  }
+  
